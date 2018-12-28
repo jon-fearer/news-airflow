@@ -1,3 +1,9 @@
+# Mac
+*.DS_Store
+
+# Settings file
+*settings.py
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -14,6 +20,7 @@ dist/
 downloads/
 eggs/
 .eggs/
+bin/
 lib/
 lib64/
 parts/
