@@ -13,7 +13,7 @@ def parse_cnn(title, url):
     start = '^[^>]+>'
     strip = re.search(start, article, re.DOTALL)
     article = article.replace(strip.group(0), '')
-    script = '<script>.+</script>'
+    script = '<script>[^<]+</script>'
     match = re.search(script, article, re.DOTALL)
     while match:
         article = article.replace(match.group(0), '')
