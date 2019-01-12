@@ -12,15 +12,10 @@ default_args = {
     'owner': 'Jon Fearer',
     'depends_on_past': False,
     'start_date': datetime(2018, 12, 27),
-    # 'email': ['airflow@example.com'],
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 1,
     'retry_delay': timedelta(minutes=5),
-    # 'queue': 'bash_queue',
-    # 'pool': 'backfill',
-    # 'priority_weight': 10,
-    # 'end_date': datetime(2016, 1, 1),
 }
 
 dag = DAG('cnn_top_stories',
